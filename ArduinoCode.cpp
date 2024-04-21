@@ -9,7 +9,7 @@ const int servoPin = 6;
 const int trig2Pin=5;
 const int echo2Pin=11;
 
-#define BUTTON_PIN 3 // Pinul de control al servo-ului
+#define BUTTON_PIN 3
 
 Servo myservo;
 
@@ -32,7 +32,7 @@ void setup() {
    myservo.attach(servoPin);
   lcd.begin(16, 2); 
   lcd.setCursor(0,0);          
-  lcd.print("Liber de setUp");
+  lcd.print("FREE");
 }
 
 bool detectieUltrasonic_interior(int t,int e)
@@ -66,9 +66,9 @@ void loop()
       digitalWrite(ledPin, HIGH);
       lcd.clear();
       lcd.setCursor(0,0);          
-  	  lcd.print("Ocupat! E cineva");
+  	  lcd.print("Occupied! Someone is here");
       lcd.setCursor(2,1);
-      lcd.print("Asteptati");
+      lcd.print("Wait");
       myservo.write(0);
     }
   }
@@ -82,7 +82,7 @@ void loop()
     digitalWrite(ledPin,LOW);
     lcd.clear();
     lcd.setCursor(0,0);          
- 	lcd.print("Liber! ButonAp");
+ 	lcd.print("FREE");
     delay(2500);
     s=0;
     }
