@@ -1,2 +1,2 @@
 # Bank-Door
-aads
+This system constitutes a security solution for a bank door. When an individual wants to enter, the external ultrasonic sensor detects their presence and automatically opens the door. Then, the door closes, and a LED illuminates. If another individual attempts entry while someone is already inside, the system prevents access, maintaining the interior's security. To exit, the person inside must press a button; the door will open automatically. Following the person's exit, the LED indicator and the door will automatically close.
