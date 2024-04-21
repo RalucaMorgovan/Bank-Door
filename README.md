@@ -3,7 +3,7 @@ This system constitutes a security solution for a bank door. When an individual 
 
 The system includes:
   - 2 Ultrasonic Senser - one external to detect the presence outside
-                        - one inside to detect the presence inside
+                         - one inside to detect the presence inside
   - 1 Servo Motor - to open the door
   - 1 LED - to illuminate when someone is inside
 
